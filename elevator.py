@@ -1,5 +1,5 @@
-import tkinter as tk
-
+import os, sys, subprocess
+import platform
 import customtkinter
 import customtkinter as ctk
 from customtkinter import *
@@ -22,7 +22,7 @@ class App(customtkinter.CTk):
         First = 340
 
         global Second
-        Second =140
+        Second = 140
 
         # Main Canvas
         self.canvas = CTkCanvas(self, width=250, height=600, background='black')
@@ -34,6 +34,9 @@ class App(customtkinter.CTk):
             self.canvas.create_line(0, n, 400, n, fill="white", width=4)
 
         # Define the Doors/ floors button
+        self.restart = CTkButton(self, text='Restart', command=self.restart)
+        self.restart.grid(row=0, column=3, padx=20, pady=10)
+
         self.ground_floor_button = CTkButton(self, text='C', command=self.second)
         self.ground_floor_button.grid(row=1, column=1, padx=20, pady=10)
 
@@ -63,7 +66,7 @@ class App(customtkinter.CTk):
 
         global First
         global Base
-        global  Second
+        global Second
         # second += 20
 
         if self.current_floor == 'Second' and Second <= Base:
@@ -80,7 +83,6 @@ class App(customtkinter.CTk):
             self.floor_label = CTkLabel(self, text="You're on the ground floor", font=('Helvetica', 20, 'bold'))
             self.floor_label.grid(row=4, column=1, padx=2, pady=5)
             del self.floor_label
-
 
     def first(self):
         self.current_floor = self.get_choice(choice=self.choose_floor.get())
@@ -104,7 +106,6 @@ class App(customtkinter.CTk):
             self.floor_label.grid(row=4, column=1, padx=2, pady=5)
             del self.floor_label
 
-
     def second(self):
         self.current_floor = self.get_choice(choice=self.choose_floor.get())
 
@@ -126,6 +127,12 @@ class App(customtkinter.CTk):
             self.floor_label = CTkLabel(self, text="You're on the second floor", font=('Helvetica', 20, 'bold'))
             self.floor_label.grid(row=4, column=1, padx=2, pady=5)
             del self.floor_label
+
+    def restart(self):
+        self.destroy()
+        self.command = [sys.executable] + sys.argv
+        subprocess.call(self.command)
+        sys.exit()
 
 
 def main():
