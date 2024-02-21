@@ -19,10 +19,21 @@ After cloning the reporun:
 
 *Windows and Linux-based:* `pip install -r requirements.txt`
 
-*MacOS:* `pip3 install requirements.txt`
+*MacOS:* <pre> ```bash $ pip3 install requirements.txt``` <pre>
 
 If you have `customtkinter` installed, you can upgrade by running:
 
 *Windows and Linux-based:* `pip install customtkinter --upgrade`
 
 *MacOS:* `pip3 install customtkinter --upgrade`
+
+#### To run the app
+
+<pre>
+
+```bash
+
+$ python3 elevator.py
+
+```
+</pre>
