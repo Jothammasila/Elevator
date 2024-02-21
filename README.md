@@ -1,6 +1,6 @@
 This is the elevator problem.
 
-##THE PROBLEM
+## THE PROBLEM
 
 An elevator machine distributes people to various floors at the JKUAT
 towers in Nairobi city. The machine waits for students and/or staff to
@@ -11,9 +11,9 @@ Using a programming language of your choice write a computer
 program to implement the above machine. Simulate this problem with
 an appropriate User Interface.
 
-##SOLUTION
+## SOLUTION
 Find the solution in the 'elevator.py' file.
 
-##SETTINGS
+## SETTINGS
 After cloning the repo:
 run `pip install -r requirements.txt`
