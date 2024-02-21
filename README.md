@@ -19,7 +19,7 @@ After cloning the reporun:
 
 *Windows and Linux-based:* `$ pip install -r requirements.txt`
 
-*MacOS:* `$ pip3 install requirements.txt```
+*MacOS:* `$ pip3 install requirements.txt`
 
 If you have `customtkinter` installed, you can upgrade by running:
 
