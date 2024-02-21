@@ -12,7 +12,7 @@ program to implement the above machine. Simulate this problem with
 an appropriate User Interface.
 
 ## SOLUTION
-Find the solution in the 'elevator.py' file.
+Find the solution in the `elevator.py` file.
 
 ## SETTINGS
 After cloning the repo:
