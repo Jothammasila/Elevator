@@ -15,5 +15,10 @@ an appropriate User Interface.
 Find the solution in the `elevator.py` file.
 
 ## SETTINGS
-After cloning the repo:
-run `pip install -r requirements.txt`
+After cloning the reporun:
+*Windows and Linux-based:* `pip install -r requirements.txt`
+*MacOS:* `pip3 install requirements.txt`
+
+If you have `customtkinter` installed, you can upgrade by running:
+*Windows and Linux-based:* `pip install customtkinter --upgrade`
+*MacOS:* `pip3 install customtkinter --upgrade`
